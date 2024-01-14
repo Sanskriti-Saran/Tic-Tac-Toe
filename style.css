@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #C0D7BB;
+    background-color: #A1E887;
     text-align: center;
 }
 
@@ -58,8 +58,10 @@ body{
 }
 
 #msg {
-    color: #ffffc7;
+    color: #191913;
     font-size: 5vmin;
+     transition: all 2s ease-in;
+     line-height: 5rem;
 }
 
 .msg-container {
@@ -73,4 +75,15 @@ body{
 
 .hide {
     display: none;
+}
+
+#mode {
+    padding: 0.8rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    border: none;
+    
 }

@@ -3,6 +3,9 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let modebtn = document.querySelector("#mode");
+let body = document.querySelector("body");
+let currmode = "light";
 
 let turn0 = true;
 let count = 0;
@@ -90,3 +93,13 @@ const checkWinner = () => {
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+modebtn.addEventListener("click", () => {
+    if (currmode === "light") {
+        currmode = "dark";
+        document.body.style.backgroundColor = "#4d4d4d";
+    } else {
+        currmode = "light";
+        document.body.style.backgroundColor = "#A1E887";
+    }
+});
